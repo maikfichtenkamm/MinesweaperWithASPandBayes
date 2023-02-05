@@ -1,0 +1,1 @@
+Projekt for the course Intro to Artificial Intelligence
