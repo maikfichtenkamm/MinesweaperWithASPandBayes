@@ -176,7 +176,7 @@ class ASPSolver:
         """
         print("Beginn ASP")
         # get the correct asp file corresponding to the user input
-        file = "asp-v4.lp" if self.own_implementation else "asp-dissertation.lp"
+        file = "asp/asp-v4.lp" if self.own_implementation else "asp/asp-dissertation.lp"
         extracted_safecells = []
 
         def results(m):
