@@ -12,10 +12,10 @@ Now the Minesweeper bot can be started, where you can choose between 3 arguments
 - python minesweeper_bot.py -asp-own
 - python minesweeper_bot.py -asp-dis
 
-After that, you need to press F10 to start the Bot.
-bs: Bayesian Network approach
-asp-own: my own developed asp file
-asp-dissertation: approach from the dissertation: Stepwise Debugging inAnswer-Set Programming:Theoretical Foundations and Practical Realisation by Jörg Pührer.
+After that, you need to press F10 to start the Bot. The abbreviations stand for:
+- bs: Bayesian Network approach
+- asp-own: my own developed asp file
+- asp-dissertation: approach from the dissertation: Stepwise Debugging inAnswer-Set Programming:Theoretical Foundations and Practical Realisation by Jörg Pührer.
 
 At the moment, I have not received a feedback for using the code of an dissertation. Therefore, the code for the last option is not published yet (the asp file).
 
