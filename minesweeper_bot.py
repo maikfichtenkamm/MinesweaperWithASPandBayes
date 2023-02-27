@@ -16,9 +16,6 @@ For asp_clingo_solver:
 
 Furthermore, I added the functionality for printing the development of the winrate while playing
 '''
-import sys
-import asyncio
-
 import time
 import math
 import sys
