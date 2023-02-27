@@ -8,10 +8,11 @@ The project aims at the beginner implementation of the game: a 8*8 board with 10
 The solver can be started by starting the game Minesweeper X with all cells uncovered (Press F2).
 Now the Minesweeper bot can be started, where you can choose between 3 arguments:
 
-python minesweeper_bot.py -bs
-python minesweeper_bot.py -asp-own
-python minesweeper_bot.py -asp-dis
+- python minesweeper_bot.py -bs
+- python minesweeper_bot.py -asp-own
+- python minesweeper_bot.py -asp-dis
 
+After that, you need to press F10 to start the Bot.
 bs: Bayesian Network approach
 asp-own: my own developed asp file
 asp-dissertation: approach from the dissertation: Stepwise Debugging inAnswer-Set Programming:Theoretical Foundations and Practical Realisation by Jörg Pührer.
