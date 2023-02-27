@@ -597,7 +597,7 @@ def main():
     '''Run the bot program
     '''
     # Playing regular classic minesweeper
-    use_bot(100)
+    use_bot(10)
 
 
 if __name__ == "__main__":
