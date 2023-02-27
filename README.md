@@ -3,7 +3,7 @@
 This project aims to develop a solver for the game Minesweeper. 
 Two approaches were implemented: Bayesian Networks and Answer Set Programming with clingo. In addition, both contain a basic approach. This project was programmed in Python.
 The solvers were tested on the free Minesweeper version Minesweeper X: http://www.curtisbright.com/msx/. 
-The code to interact with this game was written by the Github account computersplaygames, which was published under the MIT License. This is located in the script minesweeper_bot.py
+The code to interact with this game was written by the Github account computersplaygames, which was published under the MIT License. This is located in the script minesweeper_bot.py.
 The project aims at the beginner implementation of the game: a 8*8 board with 10 mines.
 The solver can be started by starting the game Minesweeper X with all cells uncovered (Press F2).
 Now the Minesweeper bot can be started, where you can choose between 3 arguments:
