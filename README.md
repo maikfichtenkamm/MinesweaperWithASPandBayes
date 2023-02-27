@@ -31,10 +31,13 @@ At the moment, I have not received a feedback for using the code of an dissertat
 ### Minesweeper X
 Download the game Minesweeper X from http://www.curtisbright.com/msx/ and extract it. In Windows, the game can be started directly.
 For Linux, you have to download wine and install necessary modules. Type into the console:
+```
 sudo apt-get install wine-stable
 sudo apt-get install winetricks
 winetricks vb6run
-Now, the game can also be started: wine start path/to/exe
+```
+Now, the game can also be started: 
+```wine start path/to/exe```
 
 ### Solver
 
