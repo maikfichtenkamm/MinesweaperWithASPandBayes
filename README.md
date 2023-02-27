@@ -17,7 +17,7 @@ After that, you need to press F10 to start the Bot. The abbreviations stand for:
 - asp-own: my own developed asp file
 - asp-dissertation: approach from the dissertation: Stepwise Debugging inAnswer-Set Programming:Theoretical Foundations and Practical Realisation by Jörg Pührer.
 
-At the moment, I have not received a feedback for using the code of an dissertation. Therefore, the code for the last option is not published yet (the asp file).
+At the moment, I have not received a feedback for using the code of the dissertation. Therefore, the code for the last option is not published yet (the asp file).
 
 ## Scripts:
 
