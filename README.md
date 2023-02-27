@@ -21,8 +21,8 @@ At the moment, I have not received a feedback for using the code of an dissertat
 
 ## Scripts:
 
-- asp_clingo_solver.py: consists of the Answer Set Programming solver
-- bayes_solver: consists the Bayesian Network approach.
+- asp_clingo_solver.py: contains of the Answer Set Programming solver
+- bayes_solver: contains the Bayesian Network approach.
 - asp folder: contains different logic programs. 
     - asp-v4.lp: my final version
 - minesweeper_bot.py: interface to the Minesweeper X game
