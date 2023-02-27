@@ -39,14 +39,14 @@ Now, the game can also be started: wine start path/to/exe
 ### Solver
 
 For the Python script, I have added a requirement file:
-sudo pip install -r requirements.txt
+    sudo pip install -r requirements.txt
 The main problem is, that some of the modules need sudo rights. 
 
 For me it had not worked to install the requirements in a virtual environment, because for example the module keyboard needs elevated rights. 
 Therefore, you can also try to install the modules with:
-sudo pip install numpy==1.24.2 Pillow==9.4.0 PyAutoGUI==0.9.53 clingo==5.6.2 matplotlib pgmpy==0.1.21 keyboard==0.13.5
+    sudo pip install numpy==1.24.2 Pillow==9.4.0 PyAutoGUI==0.9.53 clingo==5.6.2 matplotlib pgmpy==0.1.21 keyboard==0.13.5
 
 Also, it could be necessary to install scrot
-sudo apt-get install scrot
+    sudo apt-get install scrot
 
 After that, it should be possible to run the Bot. For instance in Linux: sudo python3 minesweeper_bot.py -bs
