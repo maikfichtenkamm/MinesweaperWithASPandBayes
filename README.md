@@ -1,15 +1,22 @@
 # Projekt for the course Intro to Artificial Intelligence at the Alpen-Adria University of Klagenfurt
 
-Dieses Porjekt zielte darauf ab einen Löser für das Spiel Minesweeper zu entwickeln. 
-Dafür wurden zwei Ansätze implementiert: Bayesian Networks and Answer Set Programming with clingo. Zudem enthalten beide einen basic approach. Dieses Projekt wurde in Python programmiert.
-Getested wurden die Löser an der kostenlosen Minesweeper Version Minesweeper X: http://www.curtisbright.com/msx/ 
-Der Code um mit diesem SPiel zu interagieren wurde von dem Github Account computersplaygames geschrieben, welches unter der MIT License gepublished wurde. Dies befindet sich im Script minesweeper_bot.py
-Das Projekt zielt auf die Beginner Implementation des Spieles ab: a 8*8 Board with 10 Mines.
-Der Löser kann gestartet werden, indem das Spiel Minesweeper X gestartet wird, wobei alle Zellen uncovered sein sollen.
-Nun wird der Minesweeper bot gestartet, woebi zwischen 3 argumenten gewählt werden kann:
+This project aims to develop a solver for the game Minesweeper. 
+Two approaches were implemented: Bayesian Networks and Answer Set Programming with clingo. In addition, both contain a basic approach. This project was programmed in Python.
+The solvers were tested on the free Minesweeper version Minesweeper X: http://www.curtisbright.com/msx/. 
+The code to interact with this game was written by the Github account computersplaygames, which was published under the MIT License. This is located in the script minesweeper_bot.py
+The project aims at the beginner implementation of the game: a 8*8 board with 10 mines.
+The solver can be started by starting the game Minesweeper X with all cells uncovered (Press F2).
+Now the Minesweeper bot can be started, where you can choose between 3 arguments:
+
 python minesweeper_bot.py -bs
 python minesweeper_bot.py -asp-own
 python minesweeper_bot.py -asp-dis
+
+bs: Bayesian Network approach
+asp-own: my own developed asp file
+asp-dissertation: approach from the dissertation: Stepwise Debugging inAnswer-Set Programming:Theoretical Foundations and Practical Realisation by Jörg Pührer.
+
+At the moment, I have not received a feedback for using the code of an dissertation. Therefore, the code for the last option is not published yet (the asp file).
 
 ## Scripts:
 
