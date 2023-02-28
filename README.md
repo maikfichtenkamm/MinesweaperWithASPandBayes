@@ -41,6 +41,7 @@ Now, the game can also be started:
 
 ### Solver
 
+The installation was tested on Windows and on a Ubuntu 20.04 system.
 For the Python script, I have added a requirement file:
 ```
     sudo pip install -r requirements.txt
