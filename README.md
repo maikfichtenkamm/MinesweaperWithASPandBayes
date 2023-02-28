@@ -61,3 +61,4 @@ After that, it should be possible to run the Bot. For instance in Linux:
 ```sudo python3 minesweeper_bot.py -bs```
 
 ![](video-solver.gif)
+
