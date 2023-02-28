@@ -1,6 +1,6 @@
 # Project for the course Intro to Artificial Intelligence at the Alpen-Adria University of Klagenfurt
 
-https://github.com/maikfichtenkamm/MinesweaperWithASPandBayes/blob/main/video-solver.gif
+![](video-solver.gif)
 
 This project aims to develop a solver for the game Minesweeper. 
 Two approaches were implemented: Bayesian Networks and Answer Set Programming with clingo. In addition, both contain a basic approach. This project was programmed in Python.
