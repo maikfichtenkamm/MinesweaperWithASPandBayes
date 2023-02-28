@@ -1,7 +1,5 @@
 # Project for the course Intro to Artificial Intelligence at the Alpen-Adria University of Klagenfurt
 
-![](video-solver.gif | width=250 height=250)
-
 This project aims to develop a solver for the game Minesweeper. 
 Two approaches were implemented: Bayesian Networks and Answer Set Programming with clingo. In addition, both contain a basic approach. This project was programmed in Python.
 The solvers were tested on the free Minesweeper version Minesweeper X: http://www.curtisbright.com/msx/. 
@@ -61,3 +59,5 @@ Also, it could be necessary to install scrot
 ```
 After that, it should be possible to run the Bot. For instance in Linux: 
 ```sudo python3 minesweeper_bot.py -bs```
+
+![](video-solver.gif)
