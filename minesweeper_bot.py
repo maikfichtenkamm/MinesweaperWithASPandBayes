@@ -461,16 +461,13 @@ class MinesweeperBot:
     def do_clicks(self, safe, mines):
         '''Given the safe and mines coordinates, do the clicks
         '''
-        # print("safes:", safe)
-        # print("mines:", mines)
+      
         for button, coord_list in zip(("right", "left"), (mines, safe)):
             if not coord_list:
                 continue
-            print("Coord_List:", coord_list)
-            print("Button_List:", button)
+           
             for coord in coord_list:
-                print("Coord", coord)
-
+                
                 left, top, right, bottom = self.cells_coordinates[coord]
 
                 # Actual clicking

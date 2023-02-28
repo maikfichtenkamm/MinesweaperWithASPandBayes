@@ -266,21 +266,16 @@ class BayesSolver:
         self.calculate_current_probability()
         self.generate_Ys_for_BN()
         self.generate_edges_for_BN()
-        
-        #print(self.model.get_edge_data())
-        
+                
         # Basic Cases:
         safes = set()
         mines = set()
         # basic fall 1: see if a field has only mines in its neighbring covered cells
         for cell in self.y_variables_BN:
             if len(self.y_to_x_variables_BN[cell]) == field[cell]:
-                print("Basic case")
-                print(self.y_to_x_variables_BN[cell])
                 for mine in self.y_to_x_variables_BN[cell]:
                     if mine not in self.x_variables_mines:
                         mines.add(mine)
-                print("BASIC FALL 1")
                 break
             # basic fall 2
             local_mines = 0
@@ -301,10 +296,7 @@ class BayesSolver:
                 if neighbor in self.covered_cells:
                     safes.add(neighbor)
             
-        print("Safes:", safes)
-        print("mines:", mines)
         if safes or mines:
-            print("Basic fall")
             return list(safes), list(mines)
         
         # Bayesian Network approach: 
@@ -325,7 +317,6 @@ class BayesSolver:
         prob_safes = {}
         mines = []
         prob_mines = {}
-        print("Länge der Variablen", len(self.x_variables_BN))
         for cell in self.x_variables_BN:
             # make a query for each x varible and get its probabilities
             prob_mine, prob_safe = infer.query(variables=[str(cell)], evidence=evidence_dict).values
@@ -333,18 +324,14 @@ class BayesSolver:
             prob_mines[cell] = prob_mine
             # see if a x varibales is a safecell or mine
             if prob_mine == 1.0:
-                print("Mine", cell, prob_mine, type(prob_mine))
                 mines.append(cell)
             if prob_mine == 0.0:
-                print("Safe", cell, prob_safe, type(prob_mine))
                 safes.append(cell)
         if safes or mines:
-            print("Bayesian Network: found safecells or mines")
             return safes, mines
         # else see if the probability for a field to be not a mine is smaller than the current probability
         elif prob_mines: 
             # get the smallest probability of a field to be mine
-            print("Bayeisan Network: smallest probability")
             return [min(prob_mines, key=prob_mines.get)], None
         else:
             # make a random prediction: should not happen

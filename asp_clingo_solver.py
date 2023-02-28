@@ -124,8 +124,6 @@ class ASPSolver:
         Returns:
             Returns a logic program in string form 
         """
-        print("diss")
-
         result_string = ""
         # iterate through each cell
         for cell in self.all_cells:
@@ -148,7 +146,6 @@ class ASPSolver:
         Returns:
             Returns a logic program in string form 
         """
-        print("own")
         result_string = ""
         # iterate through each cell
         for cell in self.all_cells:
@@ -174,7 +171,6 @@ class ASPSolver:
         Returns:
             The found safecells in an array
         """
-        print("Beginn ASP")
         # get the correct asp file corresponding to the user input
         file = "asp/asp-v4.lp" if self.own_implementation else "asp/asp-dissertation.lp"
         extracted_safecells = []
@@ -186,12 +182,10 @@ class ASPSolver:
                 Extracts the safecells of the clingo output and returns them in an array
             """
             extracted_safecells.append(str(m))
-            print(str(m))
         # generate a logic program based on the current available knowledge of the game situation
         ground_string = self.ground_string_own(
         ) if self.own_implementation else self.ground_string_dissertation()
         # initialize the Control object for the grounding/solving process.
-        print(ground_string)
 
         ctl = Control(arguments=[])
 
@@ -213,7 +207,6 @@ class ASPSolver:
             # Check for errors
             if len(cell_arr) == 2:
                 safes.append(cell_arr)
-        print("Finished ASP")
         return safes
 
     def dict_all_neighbors(self):
@@ -284,16 +277,12 @@ class ASPSolver:
                     safes.add(neighbor)
 
         if safes or mines:
-            print("Basic fall")
             return list(safes), list(mines)
 
         # apply ASP logic
         safes = self.apply_asp()
-        print("SAFES OF ASP", safes)
         if safes:
-            print("ASP found safecells")
             return safes, mines
         else:
-            print('Random Choice')
             # covered cells ohne die aufgedeckten
             return [random.choice(self.covered_cells)], None
